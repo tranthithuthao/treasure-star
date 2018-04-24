@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TOP</title>
+<meta name="description" content="Web thao">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="Tran Thi Thu Thao">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/to_top.js" type="text/javascript"></script>
+</head>
+<body>
+	<header>
+		<div class="container clearfix">
+			<h1 class="logo"><img src="images/logo.png" alt="" title=""></h1>
+			<div class="navi">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="service.html">Services</a></li>
+					<li><a href="career.html">Career</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<h2 class="page_tt">
+		<div class="container">
+			<p>Contact us</p>
+		</div>
+	</h2>
+	<main>
+
+		<div id="page-inside-content">
+			<section id="contact-page" class="sub_page">
+				<div class="container page_content">
+				<!--Contact form start-->
+				<div id="contact-form" class="contact_from01">
+						<div class="w-100">
+							<form class="form-horizontal w-100" action="" method="post" id="contact_form">
+								<p class="mar_b30">Feel free to contact us at anytime using the following form below.</p>
+								<fieldset>
+								
+								<!-- Full Name-->
+								<div class="form_group">
+									<div class="w-100 inputGroupContainer">
+										<label>Fullname <span class="txt_red">*required</span></label>
+										<input name="first_name" data-bv-notempty="true" data-bv-notempty-message="Please enter your name" class="form_cl" type="text">
+										<small class="help-block hidden err_first_name"></small>
+									</div>
+								</div>
+
+								<!-- Email-->
+								<div class="form_group">
+									<div class="w-100 inputGroupContainer">
+										<label>Email <span class="txt_red">*required</span></label>
+										<input name="email" class="form_cl" data-bv-emailaddress="true" data-bv-notempty="true" data-bv-notempty-message="Please enter your email" data-bv-emailaddress-message="Please enter your email" type="text">
+										<small class="help-block hidden err_email"></small>
+								 </div>
+								</div>
+
+								<!-- Phone-->
+								<div class="form_group">
+									<div class="w-100 inputGroupContainer">
+										<label>Contact phone number</label>
+										<input name="phone" class="form_cl" name="number" type="number" data-bv-integer-message="Please enter your phone">
+										<small class="help-block hidden err_phone"></small>
+									</div>
+								</div>
+
+								<!-- Description -->
+								<div class="form_group">
+									<div class="w-100 inputGroupContainer">
+										<label>Inquiry <span class="txt_red">*required</span></label>
+										<textarea class="form_cl" rows="7" name="content" data-bv-notempty="true" data-bv-notempty-message="Please enter your inquiry" placeholder="Inquiry"></textarea>
+										<small class="help-block hidden err_content"></small>
+									</div>
+								</div>
+								<!-- Recaptcha -->
+								<div class="form_group">
+									<div class="w-100 inputGroupContainer">
+										<label>Recaptcha <span style="color:red;font-size:0.8em">*required</span></label>
+										<div class="g-recaptcha" data-sitekey="6LfOaisUAAAAAOi5OIYEf5tIjtKWDPcGUI5K9LPX"></div>
+										<small class="help-block hidden err_recaptcha"> Please enter the recaptcha</small>
+									</div>
+								</div>
+
+								<!-- Button -->
+								<div class="form_group">
+									<div class="w-100 button-contact-us">
+										<a><button class="btn" type="button" id="submit_button" onclick="$('#contact_form').submit();"><span>Send your request</span></button></a></p>	
+									</div>
+								</div>
+								</fieldset>
+							</form>			
+					</div>	
+				</div>
+		
+			<!--Contact form End-->
+				</div>
+			</section>		
+		</div>	
+	</main>
+	<footer>
+			<div class="container">
+				<p class="logo"><a href="/"><img src="images/logo.png" alt="Treasure Star Pte. Ltd."></a></p>
+				<p>Empowering business to meet new challenges</p>
+				<p class="copyright">Copyright © Treasure Star Pte. Ltd. All rights reserved.</p>
+			</div>
+	</footer>
+	<button class="btn-top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+</body>
+</html>
